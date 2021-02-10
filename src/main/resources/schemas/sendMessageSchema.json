@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {}
+        },
+        "files": {
+          "type": "array",
+          "items": {}
+        },
+        "likes": {
+          "type": "array",
+          "items": {}
+        },
+        "comments": {
+          "type": "array",
+          "items": {}
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "_id": {
+              "type": "string"
+            },
+            "avatars": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "_id": {
+                      "type": "string"
+                    },
+                    "destination": {
+                      "type": "string"
+                    },
+                    "filename": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "_id",
+                    "destination",
+                    "filename"
+                  ]
+                }
+              ]
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "first_name_en": {
+              "type": "string"
+            },
+            "last_name_en": {
+              "type": "string"
+            },
+            "test": {
+              "type": "string"
+            },
+            "first_name_ru": {
+              "type": "string"
+            },
+            "last_name_ru": {
+              "type": "string"
+            },
+            "first_name_uk": {
+              "type": "string"
+            },
+            "last_name_uk": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_id",
+            "avatars",
+            "first_name",
+            "last_name",
+            "first_name_en",
+            "last_name_en",
+            "first_name_ru",
+            "last_name_ru",
+            "first_name_uk",
+            "last_name_uk"
+          ]
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "text",
+        "images",
+        "files",
+        "likes",
+        "comments",
+        "author",
+        "createdAt",
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "response"
+  ]
+}

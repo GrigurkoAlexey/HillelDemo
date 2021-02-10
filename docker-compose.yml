@@ -1,0 +1,31 @@
+version: "2"
+
+services:
+  hub:
+    image: selenium/hub:latest
+    ports:
+      - "4444:4444"
+  chrome_node_1:
+    image: selenium/node-chrome:latest
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+  firefox_node_1:
+    image: selenium/node-firefox:latest
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+  chrome_node_2:
+    image: selenium/node-chrome:latest
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+  firefox_node_2:
+    image: selenium/node-firefox:latest
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub

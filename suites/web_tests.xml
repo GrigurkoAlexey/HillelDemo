@@ -1,0 +1,8 @@
+<suite thread-count="2" name="All Web Tests" parallel="classes" >
+    <test name="Suite">
+        <classes>
+            <class name="ua.ithillel.lms.tests.web.SignInTests"/>
+            <class name="ua.ithillel.lms.tests.web.FeedTests"/>
+        </classes>
+    </test>
+</suite>

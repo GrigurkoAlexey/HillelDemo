@@ -1,0 +1,9 @@
+<suite thread-count="3" name="All Api Tests" parallel="classes">
+    <test name="Suite">
+        <classes>
+            <class name="ua.ithillel.lms.tests.api.AuthorizationTests"/>
+            <class name="ua.ithillel.lms.tests.api.FeedTests"/>
+<!--            <class name="ua.ithillel.lms.tests.api.SendMessageTests"/>-->
+        </classes>
+    </test>
+</suite>
