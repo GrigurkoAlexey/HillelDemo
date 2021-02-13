@@ -1,5 +1,6 @@
 package ua.ithillel.lms.web.models;
 
+
 import java.util.Objects;
 
 public class UserProfile {

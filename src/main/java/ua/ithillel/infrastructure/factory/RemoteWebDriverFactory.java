@@ -30,6 +30,7 @@ public class RemoteWebDriverFactory implements WebDriverFactory {
     private WebDriver startRemoteWebDriver(DesiredCapabilities capabilities) {
         try {
             RemoteWebDriver webDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            // Access to local files
             webDriver.setFileDetector(new LocalFileDetector());
             return webDriver;
         } catch (MalformedURLException e) {
